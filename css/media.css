@@ -1,0 +1,57 @@
+:root {
+    --bg-color: #fff;
+    --light-bg: #eee;
+    --text-color: #060607;
+    --main-color: #03a9f4;
+    --alt-color: #2196f3;
+    --gredient: linear-gradient(98.73deg, var(--main-color) -52.43%, rgba(254, 31, 39, 0) 82.99%);
+}
+
+@media screen and (max-width: 767px) {
+    html {
+        font-size: 12px;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #waves {
+        width: 200px;
+        height: 200px;
+    }
+
+    #Contact .container {
+        width: 100%;
+    }
+
+    #Contact .contact {
+        flex-direction: column;
+    }
+
+    #Contact .contact>* {
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {}
+
+@media screen and (min-width: 1200px) {
+    .navbar-expand-lg {
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .navbar-collapse ul li a {
+        color: var(--bg-color);
+    }
+}
